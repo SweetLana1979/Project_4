@@ -1,9 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        BonusMilesService service = new BonusMilesService();
-        int price = 10_000;
-        int miles = service.calculate(price); // должно получиться 500
-        System.out.println(miles);
+        BmiService service = new BmiService();
+        int weightInKg = 60;
+        double heightInMiters = 1.62;
+        int bmi = service.calculate (weightInKg, heightInMiters);
+
+        System.out.println(bmi);
     }
 }
